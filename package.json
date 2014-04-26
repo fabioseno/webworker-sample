@@ -1,0 +1,16 @@
+{
+  "name": "webworker-sample",
+  "version": "1.0.0",
+  "description": "Sample app showing how performance can be improved with web workers.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Fábio Akira Yoshida",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.1.0",
+    "body-parser": "~1.0.2"
+  }
+}

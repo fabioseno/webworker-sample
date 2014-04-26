@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="core">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            ul {
+                list-style-type: none;
+            }
+            
+            ul img {
+                max-width: 100px;
+                max-height: 100px;
+            }
+        </style>
+    </head>
+    
+    <body data-ng-controller="sampleController">
+        
+        <ul>
+            <li data-ng-repeat="item in items" data-ng-bind="item.message"></li>
+        </ul>
+        
+        <input type="button" value="Without webworkers" data-ng-click="load(false)">
+        <input type="button" value="With webworkers" data-ng-click="load(true)">
+        <input type="button" value="Extra request" data-ng-click="fireRequest()">
+        <span data-ng-bind="output"></span>
+        
+        <!-- AngularJS libs -->
+        <script src="lib/angular/angular.js"></script>
+        
+        <!-- App components -->
+        <script type="text/javascript" src="app.js"></script>
+        
+    </body>
+</html>
